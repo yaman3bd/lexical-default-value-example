@@ -1,0 +1,209 @@
+.ms-editor-default-theme__ltr {
+  text-align: left;
+}
+.ms-editor-default-theme__rtl {
+  text-align: right;
+}
+.ms-editor-default-theme__paragraph {
+  margin: 0;
+  position: relative;
+}
+.ms-editor-default-theme__quote {
+  margin: 0;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: rgb(101, 103, 107);
+  border-left-color: rgb(206, 208, 212);
+  border-left-width: 4px;
+  border-left-style: solid;
+  padding-left: 16px;
+}
+.ms-editor-default-theme__h1 {
+  font-size: 24px;
+  color: rgb(5, 5, 5);
+  font-weight: 400;
+  margin: 0;
+}
+.ms-editor-default-theme__h2 {
+  font-size: 15px;
+  color: rgb(101, 103, 107);
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+.ms-editor-default-theme__h3 {
+  font-size: 12px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.ms-editor-default-theme__textBold {
+  font-weight: bold;
+}
+.ms-editor-default-theme__textItalic {
+  font-style: italic;
+}
+.ms-editor-default-theme__textUnderline {
+  text-decoration: underline;
+}
+.ms-editor-default-theme__textStrikethrough {
+  text-decoration: line-through;
+}
+.ms-editor-default-theme__textUnderlineStrikethrough {
+  text-decoration: underline line-through;
+}
+
+.ms-editor-default-theme__textCode {
+  background-color: rgb(240, 242, 245);
+  padding: 1px 0.25rem;
+  font-family: Menlo, Consolas, Monaco, monospace;
+  font-size: 94%;
+}
+.ms-editor-default-theme__hashtag {
+  background-color: rgba(88, 144, 255, 0.15);
+  border-bottom: 1px solid rgba(88, 144, 255, 0.3);
+}
+.ms-editor-default-theme__link {
+  color: rgb(33, 111, 219);
+  text-decoration: none;
+}
+.ms-editor-default-theme__link:hover {
+  text-decoration: underline;
+}
+.ms-editor-default-theme__code {
+  background-color: rgb(240, 242, 245);
+  font-family: Menlo, Consolas, Monaco, monospace;
+  display: block;
+  padding: 8px 8px 8px 52px;
+  line-height: 1.53;
+  font-size: 13px;
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  tab-size: 2;
+  /* white-space: pre; */
+  overflow-x: auto;
+  position: relative;
+}
+.ms-editor-default-theme__code:before {
+  content: attr(data-gutter);
+  position: absolute;
+  background-color: #eee;
+  left: 0;
+  top: 0;
+  border-right: 1px solid #ccc;
+  padding: 8px;
+  color: #777;
+  white-space: pre-wrap;
+  text-align: right;
+  min-width: 25px;
+}
+.ms-editor-default-theme__ol1 {
+  padding: 0;
+  margin: 0;
+  margin-left: 16px;
+  list-style-position: inside;
+}
+.ms-editor-default-theme__ol2 {
+  padding: 0;
+  margin: 0;
+  margin-left: 16px;
+  list-style-type: upper-alpha;
+  list-style-position: inside;
+}
+.ms-editor-default-theme__ol3 {
+  padding: 0;
+  margin: 0;
+  margin-left: 16px;
+  list-style-type: lower-alpha;
+  list-style-position: inside;
+}
+.ms-editor-default-theme__ol4 {
+  padding: 0;
+  margin: 0;
+  margin-left: 16px;
+  list-style-type: upper-roman;
+  list-style-position: inside;
+}
+.ms-editor-default-theme__ol5 {
+  padding: 0;
+  margin: 0;
+  margin-left: 16px;
+  list-style-type: lower-roman;
+  list-style-position: inside;
+}
+.ms-editor-default-theme__ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 16px;
+  list-style-position: inside;
+}
+.ms-editor-default-theme__listItem {
+  margin: 0 32px;
+}
+.ms-editor-default-theme__listItemChecked,
+.ms-editor-default-theme__listItemUnchecked {
+  position: relative;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  list-style-type: none;
+  outline: none;
+}
+.ms-editor-default-theme__listItemChecked {
+  text-decoration: line-through;
+}
+.ms-editor-default-theme__listItemUnchecked:before,
+.ms-editor-default-theme__listItemChecked:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: 0;
+  cursor: pointer;
+  display: block;
+  background-size: cover;
+  position: absolute;
+}
+.ms-editor-default-theme__listItemUnchecked[dir="rtl"]:before,
+.ms-editor-default-theme__listItemChecked[dir="rtl"]:before {
+  left: auto;
+  right: 0;
+}
+.ms-editor-default-theme__listItemUnchecked:focus:before,
+.ms-editor-default-theme__listItemChecked:focus:before {
+  box-shadow: 0 0 0 2px #a6cdfe;
+  border-radius: 2px;
+}
+.ms-editor-default-theme__listItemUnchecked:before {
+  border: 1px solid #999;
+  border-radius: 2px;
+}
+.ms-editor-default-theme__listItemChecked:before {
+  border: 1px solid rgb(61, 135, 245);
+  border-radius: 2px;
+  background-color: #3d87f5;
+  background-repeat: no-repeat;
+}
+.ms-editor-default-theme__listItemChecked:after {
+  content: "";
+  cursor: pointer;
+  border-color: #fff;
+  border-style: solid;
+  position: absolute;
+  display: block;
+  top: 6px;
+  width: 3px;
+  left: 7px;
+  height: 6px;
+  transform: rotate(45deg);
+  border-width: 0 2px 2px 0;
+}
+.ms-editor-default-theme__nestedListItem {
+  list-style-type: none;
+}
+.ms-editor-default-theme__nestedListItem:before,
+.ms-editor-default-theme__nestedListItem:after {
+  display: none;
+}
