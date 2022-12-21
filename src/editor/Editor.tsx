@@ -58,7 +58,7 @@ const Editor = forwardRef<HTMLDivElement, EditorProps>(
 
 
     //this code working fine
-    const update = (editor: LexicalEditor) => {
+    /*const update = (editor: LexicalEditor) => {
       console.log('test');
       const parser = new DOMParser();
       const dom = parser.parseFromString(defaultValue ?? "", "text/html");
@@ -66,10 +66,10 @@ const Editor = forwardRef<HTMLDivElement, EditorProps>(
       const nodes = $generateNodesFromDOM(editor, dom);
       const root = $getRoot();
       root.append(...nodes);
-    };
+    };*/
 
     //this code will throw `replace: cannot be called on root nodes`
-    /*const update = (editor: LexicalEditor) => {
+    const update = (editor: LexicalEditor) => {
       const parser = new DOMParser();
       const dom = parser.parseFromString(defaultValue ?? '', 'text/html');
 
@@ -78,7 +78,7 @@ const Editor = forwardRef<HTMLDivElement, EditorProps>(
       $getRoot().select();
 
       $insertNodes(nodes);
-    };*/
+    };
     const initialConfig = {
       editorState: update,
       namespace: 'Playground',
