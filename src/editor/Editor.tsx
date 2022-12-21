@@ -15,7 +15,6 @@ import { $getRoot, $insertNodes, EditorState, LexicalEditor } from 'lexical';
 import { mergeRefs } from 'react-merge-refs';
 
 import DefaultNodes from './nodes/DefaultNodes';
-import DefaultValuePlugin from './plugins/DefaultValuePlugin';
 import FloatingLinkEditorPlugin from './plugins/FloatingLinkEditorPlugin';
 import DefaultTheme from './themes/DefaultTheme';
 
@@ -112,7 +111,6 @@ const Editor = forwardRef<HTMLDivElement, EditorProps>(
                 <HashtagPlugin/>
                 <AutoLinkPlugin/>
                 <OnChangePlugin onChange={handleChange}/>
-                <DefaultValuePlugin value={defaultValue}/>
                 <RichTextPlugin
                   contentEditable={
                     <div className={styles['editor-scroller']}>
